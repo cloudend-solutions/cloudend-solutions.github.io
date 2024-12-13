@@ -1,1 +1,55 @@
-<h1>Welcome to Cloudend</h1>
+<main>
+  <h1>Every project is inevitably cloudbound</h1>
+  <div class="certifications">
+    <div class="azure-certifications">
+    <figure>
+      <img src="/public/devops.png" alt="AWS Security Specialist" />
+      <figcaption>AWS Security Specialist</figcaption>
+    </figure>
+    <figure>
+      <img src="/public/az-administrator.png" alt="AWS Security Specialist" />
+      <figcaption>AWS Security Specialist</figcaption>
+    </figure>
+    </div>
+    <div class="aws-certifications">
+    <figure>
+      <img src="/public/security.png" alt="AWS Security Specialist" />
+      <figcaption>AWS Security Specialist</figcaption>
+    </figure>
+    <figure>
+      <img src="/public/solutions.png" alt="AWS Security Specialist" />
+      <figcaption>AWS Security Specialist</figcaption>
+    </figure>
+    <figure>
+      <img src="/public/developer.png" alt="AWS Security Specialist" />
+      <figcaption>AWS Security Specialist</figcaption>
+    </figure>
+    <figure>
+      <img src="/public/sysops.png" alt="AWS Security Specialist" />
+      <figcaption>AWS Security Specialist</figcaption>
+    </figure>
+    </div>
+  </div>
+</main>
+
+<style>
+  figure > img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+  }
+
+  .certifications {
+    display: grid;
+  }
+  .azure-certifications {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .aws-certifications {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+</style>
+
