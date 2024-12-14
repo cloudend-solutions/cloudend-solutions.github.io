@@ -1,53 +1,97 @@
 <main>
   <h1>Every tech journey is inevitably cloudbound</h1>
+
   <div class="certifications">
+
     <div class="azure-certifications">
     <figure>
       <img src="/devops.png" alt="Azure DevOps expert" />
       <figcaption>Azure DevOps expert</figcaption>
     </figure>
+
     <figure>
       <img src="/az-administrator.png" alt="Azure Administrator Associate" />
       <figcaption>Azure Administrator Associate</figcaption>
     </figure>
     </div>
+
     <div class="aws-certifications">
     <figure>
       <img src="/security.png" alt="AWS Security Specialist" />
       <figcaption>AWS Security Specialist</figcaption>
     </figure>
+
     <figure>
       <img src="/solutions.png" alt="AWS Solutions Architect" />
       <figcaption>AWS Solutions Architect</figcaption>
     </figure>
+
     <figure>
       <img src="/developer.png" alt="AWS Developer Associate" />
       <figcaption>AWS Developer Associate</figcaption>
     </figure>
+
     <figure>
       <img src="/sysops.png" alt="AWS Sysops Associate" />
       <figcaption>AWS Sysops Associate</figcaption>
     </figure>
+
     </div>
+
   </div>
 </main>
 
 <style>
+:root {
+       --primary-color-900: #241f31;
+       --primary-color-200: #efde99;
+}
+
+  body {
+    background-color: var(--primary-color-900);
+  }
+
+  main > h1 {
+    color: var(--primary-color-200);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    margin: 2rem 0 2rem 0;
+  }
+  figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   figure > img {
-    width: 100%;
     max-width: 100px;
     height: auto;
   }
 
+  figure > figcaption {
+    font-size: .6rem;
+    font-weight: 200;
+    color: var(--primary-color-200);
+    margin-top: .6rem;
+  }
+
   .certifications {
     display: grid;
+    grid-template-rows: auto auto; /* Define two rows */
+    grid-gap: 1rem;
+    width: 70%;
+    margin: 0 auto;
   }
   .azure-certifications {
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Define columns within the row */
     grid-gap: 1rem;
   }
   .aws-certifications {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Define columns within the row */
     grid-gap: 1rem;
   }
 
